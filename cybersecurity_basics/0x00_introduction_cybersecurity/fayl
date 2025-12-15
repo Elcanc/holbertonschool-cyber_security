@@ -3,6 +3,6 @@
 for filename in "$@"
 do
     touch "$filename"
-    echo "#!/usr/bin/python3" > "$filename"
+    echo "#!/bin/bash" > "$filename"
     chmod +x "$filename"
 done
