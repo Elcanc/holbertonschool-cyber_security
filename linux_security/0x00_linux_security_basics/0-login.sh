@@ -1,1 +1,2 @@
-#!/usr/bin/python3
+#!/bin/bash
+sudo last -n 5
