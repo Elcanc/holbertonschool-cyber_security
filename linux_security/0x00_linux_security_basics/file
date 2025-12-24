@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+for filename in "$@"; do
+    touch "$filename"
+    echo -e "#!/usr/bin/python3" > "$filename"
+    chmod +x "$filename"
+done
