@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+for filename in "$@"; do
+    touch "$filename"
+    echo -e "#!/bin/bash" > "$filename"
+    chmod +x "$filename"
+done
