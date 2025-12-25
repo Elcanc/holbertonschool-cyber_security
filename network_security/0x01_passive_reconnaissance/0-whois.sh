@@ -1,2 +1,2 @@
 #!/bin/bash
-whois $1 | awk '/Registrant/ {print "Registrant Name," $3 " " $4; next} /Admin/ {print "Admin Name," $3 " " $4; next} /Tech/ {print "Tech Name," $3 " " $4; next}'
+whois "$1" | awk -F: '/^Registrant|^Admin|^Tech/ {if ($1 ~ /Ext/) $1=$1":"; if ($2=="") $2=" "; print $1 "," $2}' > "${1}.csv"
