@@ -1,1 +1,1 @@
-i
+icmp.type == 8
