@@ -1,1 +1,1 @@
-i
+tcp.flags == 0x002 or tcp.flags == 0x010
