@@ -1,1 +1,1 @@
-i
+arp.opcode == 1
